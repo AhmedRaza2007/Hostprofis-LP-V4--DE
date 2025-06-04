@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ca86787c55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+    <title>Hostprofis-LP-V4--DE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg-[#2b1600] text-white py-4 text-base font-bold">
+            <div class="max-w-7xl mx-auto px-4 lg:px-24 flex flex-wrap justify-between items-center gap-4">
+
+                <div class="flex items-center gap-2">
+                    <span><img src="./img/aus-flag.svg" alt=""></span>
+                    <span>AUS ÖSTERREICH</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>BIS ZU 60% GÜNSTIGER</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span>JEDERZEIT KÜNDBAR</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-user"></i>
+                    <span>40.000+ KUNDEN</span>
+                </div>
+
+            </div>
+        </div>
+        <nav class="bg-[#FAF4EB] border-b-2 border-[#FAC800] py-4 w-full">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 lg:px-8">
+
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="./img/host-img.svg" class="h-10" alt="Logo" />
+                </a>
+
+                <div class="hidden md:flex items-center space-x-20 font-normal text-black text-base">
+                    <a href="#" class="hover:text-yellow-600">FUNKTIONEN</a>
+                    <a href="#" class="hover:text-yellow-600">PREISE</a>
+                    <a href="#" class="hover:text-yellow-600">REVIEWS</a>
+                    <a href="#" class="hover:text-yellow-600">VERGLEICH</a>
+                    <a href="#" class="hover:text-yellow-600">FAQ</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#"
+                        class="hidden md:inline-block border-2 border-yellow-500 text-[#AB8900] font-semibold px-6 py-4 rounded-full text-base transition duration-300">
+                        Beratung Vereinbaren →
+                    </a>
+
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full md:hidden mt-4 hidden" id="navbar-sticky">
+                    <ul class="flex flex-col gap-2 text-sm text-black font-medium">
+                        <li><a href="#" class="block py-2 px-3 hover:text-yellow-600">FUNKTIONEN</a></li>
+                        <li><a href="#" class="block py-2 px-3 hover:text-yellow-600">PREISE</a></li>
+                        <li><a href="#" class="block py-2 px-3 hover:text-yellow-600">REVIEWS</a></li>
+                        <li><a href="#" class="block py-2 px-3 hover:text-yellow-600">VERGLEICH</a></li>
+                        <li><a href="#" class="block py-2 px-3 hover:text-yellow-600">FAQ</a></li>
+                        <li><a href="#"
+                                class="block py-2 px-3 border border-yellow-500 text-yellow-700 font-semibold rounded-full text-center hover:bg-yellow-500 hover:text-white">Beratung
+                                Vereinbaren →</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="text-sm text-[#231F20] font-normal mb-2"><span class="text-[#FAC800] mr-2"><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></span> Die <span class="font-extrabold">#1</span> bei <span
+                        class="font-extrabold">40.000+ Unternehmen</span></p>
+                <h1 class="text-3xl md:text-5xl font-black mb-4">Sie sind von der ISDN Abschaltung betroffen?</h1>
+                <p class="text-xl mb-6 font-normal">Wechseln Sie in nur 14 Tagen zu moderner Cloud-Telefonie – ohne hohe
+                    Kosten,
+                    ohne Stress und ohne Unterbrechungen.</p>
+
+                <ul class="space-y-3">
+                    <li class="flex items-start"><span class="text-green-500 mr-2"><img src="./img/check.svg"
+                                alt=""></span>Ihre Telefonnummern <strong class="pl-1">
+                            bleiben erhalten</strong></li>
+                    <li class="flex items-start"><span class="text-green-500 mr-2"><img src="./img/check.svg"
+                                alt=""></span><span>Keine <strong>teuren
+                                Anschaffungskosten</strong></span></li>
+                    <li class="flex items-start"><span class="text-green-500 mr-2"><img src="./img/check.svg"
+                                alt=""></span><span>Betreuung durch unser
+                            <strong>österreichisches Team</strong></span></li>
+                </ul>
+
+                <div class="mt-8 p-4 lg:py-8 lg:px-5 border lg:w-[541px] border-[#FAC800] rounded-md bg-[#FEFDFB]">
+                    <p class="text-gray-900 text-base font-normal">"Unsere ISDN-Leitung wurde mit nur 6 Wochen Frist
+                        gekündigt. Hostprofis hat unser neues System in nur 14 Tagen eingerichtet und wir konnten alle
+                        Nummern behalten. Keine Ausfallzeit, kein Stress."</p>
+                    <div class="mt-2 flex items-center gap-2">
+                        <img src="./img/gregor-zeisl.svg" alt="Gregor Zeisl">
+                        <div>
+                            <p class="font-semibold">Gregor Zeisl</p>
+                            <div class="text-yellow-500"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#FAF4EB] p-8 rounded-2xl shadow-md border border-[#FAC800]">
+                <h2 class="text-3xl font-bold mb-8 text-center">Jetzt 100% kostenlos und unverbindlich beraten lassen!
+                </h2>
+
+                <form class="space-y-4 text-[#344054]">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-sm font-normal">Vor- und Nachname</label>
+                            <input type="text" placeholder="Max Mustermann"
+                                class="px-4 py-3 border-[#D0D5DD] border rounded-full w-full bg-white mt-2" />
+                        </div>
+                        <div>
+                            <label class="text-sm font-normal">Firmenname</label>
+                            <input type="text" placeholder="Mustermann GmbH"
+                                class="px-4 py-3 border-[#D0D5DD] border rounded-full w-full bg-white mt-2" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-sm font-normal">Email</label>
+                            <input type="email" placeholder="max@mustermann.at"
+                                class="px-4 py-3 border-[#D0D5DD] border rounded-full w-full bg-white mt-2" />
+                        </div>
+                        <div>
+                            <label class="text-sm font-normal">Telefonnummer</label>
+                            <input type="tel" placeholder="+43 123456789"
+                                class="px-4 py-3 border-[#D0D5DD] border rounded-full w-full bg-white mt-2" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-sm font-normal">Wie viele Mitarbeiter hat Ihr Unternehmen?</label>
+                        <select class="px-4 py-3 border-[#D0D5DD] border rounded-full w-full bg-white mt-2">
+                            <option selected disabled>Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
+                            <option>1-10</option>
+                            <option>11-50</option>
+                            <option>51-200</option>
+                            <option>200+</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-[#FAC800] hover:bg-[#AB8900] text-base text-white font-extrabold py-4 rounded-full mt-8">JETZT
+                        KOSTENLOS BERATEN LASSEN</button>
+                    <p class="text-center text-base font-medium text-[#667085]"><i class="fa-solid fa-lock mr-2"></i>
+                        Ihre Daten sind sicher – Keine Werbung!</p>
+                </form>
+
+                <div class="mt-6 flex flex-wrap gap-6 justify-center">
+                    <img src="./img/top-50.svg" alt="Top 50">
+                    <img src="./img/pc-pro.svg" alt="PC Pro">
+                    <img src="./img/leader.svg" alt="Capterra">
+                    <img src="./img/capterra.svg" alt="">
+                    <img src="./img/award.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bg-[#FAF4EB] lg:py-20 py-6">
+            <h4 class="text-xl font-bold text-center p-4 mb-4">Die #1 bei 40.000+ Unternehmen</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-9 gap-4 text-center lg:px-4">
+                <img src="./img/fujitsu.svg" alt="fujitsu">
+                <img src="img/berndorf.svg" alt="berndorf">
+                <img src="./img/aelmam.svg" alt="aelmam">
+                <img src="img/grohe.svg" alt="grohe">
+                <img src="img/hectas.svg" alt="hectas">
+                <img src="img/lindt.svg" alt="lindt">
+                <img src="img/dachser.svg" alt="dachser">
+                <img src="img/universitat.svg" alt="universitat">
+                <img src="img/panalpina.svg" alt="panalpina">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="lg:py-20 p-4">
+            <h4 class="text-3xl lg:text-[40px] font-bold text-center">Ihre komplette Cloud Telefonanlage schon ab €14,90
+                pro Nutzer</h4>
+            <p class="text-xl font-normal text-center lg:w-[1040px] pt-6 mx-auto">Sie erhalten alle
+                <strong>Premium-Funktionen einer Enterprise-Telefonanlage,</strong> kombiniert mit <strong>maximaler
+                    Benutzerfreundlichkeit</strong> und das zu einem <strong>Bruchteil der Kosten.</strong> Wir kümmern
+                uns um den perfekten Start und den reibungslosen Betrieb – Sie genießen modernste Kommunikationstechnik
+                ohne komplizierte Installation.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-7xl mx-auto">
+            <div class="mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+                <div class="rounded-lg p-[2px] border-2 border-[#FAC800]">
+                    <img src="./img/partner.svg" alt="">
+                </div>
+
+                <div>
+                    <div class="my-4">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Keine IT-Kopfschmerzen beim Wechsel in die Cloud
+                        </h2>
+                        <p class="text-xl font-normal text-[#000000]">Wir übernehmen den gesamten Umstieg von der alten
+                            Telefonanlage in die Cloud für Sie. <strong>Schnell, einfach und kostenlos.</strong></p>
+                    </div>
+                    <ul class="space-y-3 text-xl font-normal">
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Ihr System ist in nur <strong>14 Tagen einsatzbereit </strong>– professionell
+                                eingerichtet
+                                und perfekt konfiguriert.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Sie bleiben während dem Umstieg für Ihre Kunden <strong>100% ohne Unterbrechung
+                                    erreichbar.</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Wir kümmern uns um die komplette Nummernübertragung, damit <strong>Ihre alten
+                                    Nummern nahtlos weiter funktionieren.</strong></span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="border-[#0000000F] border lg:w-[1035px] my-26 mx-auto"></div>
+
+            <div class="mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+
+                <div>
+                    <div class="my-6">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Persönlicher und regionaler Support aus
+                            Österreich
+                        </h2>
+                        <p class="text-xl font-normal text-[#000000]">Wir sind ein österreichisches Unternehmen mit
+                            Standorten in allen Bundesländern. Sie erreichen uns jederzeit – und bei dringenden Fällen
+                            sind
+                            wir blitzschnell vor Ort!</p>
+                    </div>
+                    <ul class="space-y-3 text-xl font-normal">
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span><strong>Ihr persönlicher, lokaler Experte kennt Ihre Bedürfnisse </strong>– kein
+                                lästiges
+                                Weiterleiten an dutzende Ansprechpartner.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Unser <strong>Expertenteam</strong> gewährleistet einen <strong>reibungslosen
+                                    Betrieb,</strong> ohne Aufwand für Ihr Unternehmen.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Verlassen Sie sich auf <strong>erstklassigen Support aus Österreich</strong> mit
+                                persönlicher Betreuung vor Ort.</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+                    <img src="./img/decision-partner.svg" alt="decision-partner">
+                </div>
+            </div>
+
+            <div class="border-[#0000000F] border lg:w-[1035px] my-26 mx-auto"></div>
+
+            <div class="mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 ">
+
+                <div>
+                    <img src="./img/digitale-rezeption.svg" alt="digitale Rezeption">
+                </div>
+                <div>
+                    <div class="">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 lg:mb-6">Über 150 Premium Funktionen für Ihre
+                            Business-Telefonie
+                        </h2>
+                        <p class="text-xl font-normal text-[#000000] lg:mb-6">Mit unserer Cloud-Telefonanlage erhalten
+                            Sie alle Funktionen einer Enterprise-Telefonanlage – nur einfacher zu bedienen und zu einem
+                            Bruchteil der Kosten.</p>
+                    </div>
+                    <ul class="space-y-3 text-xl font-normal">
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Eine smarte <strong>digitale Rezeption</strong> leitet Ihre Anrufer sofort zum
+                                richtigen Ansprechpartner weiter.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Unser <strong>intelligentes Warteschleifensystem</strong> mit
+                                <strong>Rückrufoptionen</strong> sorgt für <strong>zufriedene Kunden.</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Nahtlose Anrufweiterleitung auf mobile Geräte, Call Recording, Konferenzschaltungen,
+                                <strong>und vieles mehr.</strong></span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="border-[#0000000F] border lg:w-[1035px] my-26 mx-auto"></div>
+
+            <div class="mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+
+                <div>
+                    <div class="my-6">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Professionelle Geschäftsanrufe von jedem Gerät aus tätigen
+                        </h2>
+                        <p class="text-xl font-normal text-[#000000]">Bleiben Sie überall erreichbar – ob im Büro, unterwegs oder im Home-Office:</p>
+                    </div>
+                    <ul class="space-y-3 text-xl font-normal">
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Nutzen Sie Ihre geschäftliche Rufnummer auf allen Geräten: <strong>Tischtelefon, Smartphone oder Computer.</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Wechseln Sie nahtlos zwischen <strong>verschiedenen Arbeitsorten.</strong> Ihre Erreichbarkeit bleibt konstant.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Ermöglichen Sie Ihrem Team <strong>maximale Bewegungsfreiheit</strong> bei gleichbleibend <strong>professionellem Auftreten.</strong></span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+                    <img src="./img/phone-img.svg" alt="phone">
+                </div>
+            </div>
+
+            <div class="border-[#0000000F] border lg:w-[1035px] my-26 mx-auto"></div>
+
+            <div class="mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+
+                 <div>
+                    <img src="./img/hosted-telefonie.svg" alt="hosted-telefonie">
+                </div>
+
+                <div>
+                    <div class="my-6">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nahtlose Integration mit Ihren bestehenden Systemen
+                        </h2>
+                        <p class="text-xl font-normal text-[#000000]">Vernetzen Sie Ihre Kommunikation <strong>auf Knopfdruck</strong> mit all Ihren Tools und Geschäftsprozessen:</p>
+                    </div>
+                    <ul class="space-y-3 text-xl font-normal">
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Steigern Sie Ihre Servicequalität durch <strong>sofortigen Zugriff auf Kundeninformationen bei eingehenden Anrufen.</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Dokumentieren Sie jede Kundeninteraktion <strong>automatisch</strong> in Ihrem CRM-System.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="./img/check.svg" alt="" class="pr-2 mt-1">
+                            <span>Optimieren Sie Ihre Workflows durch direkte <strong>Verknüpfung von Telefonaten mit digitalen Kundenakten.</strong></span>
+                        </li>
+                    </ul>
+
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-[#FAEFEB] ">
+            <div>
+                <h4 class="">60% weniger Kosten bei 100x mehr Leistung</h4>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
